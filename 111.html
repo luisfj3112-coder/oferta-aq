@@ -366,11 +366,11 @@
 					<div class="pdf24_01" style="left:5.1em;top:40.4667em;"><span class="pdf24_16 pdf24_11 pdf24_17">Descripción &nbsp;</span></div>
 					<div class="pdf24_01" style="left:5.1em;top:41.5em;"><span class="pdf24_18 pdf24_11 pdf24_20" style="word-spacing:0.0016em; font-family: Arial, sans-serif;">{{ $json.body.descripcion_producto_1 }} &nbsp;</span></div>
 					<div class="pdf24_01" style="left:27.7875em;top:40.4667em;"><span class="pdf24_16 pdf24_11 pdf24_17">Precio &nbsp;</span></div>
-					<div class="pdf24_01" style="left:29.8555em;top:41.4874em;"><span class="pdf24_18 pdf24_11 pdf24_17">p1 &nbsp;</span></div>
+		            <div class="pdf24_01" style="left:28.3em;top:41.5em;"><span class="pdf24_18 pdf24_11 pdf24_17" style="word-spacing:0.0001em; font-family: Arial, sans-serif;">{{ $json.body.precio_unidad_sin_iva_1 }} € &nbsp;</span></div>
 					<div class="pdf24_01" style="left:33.725em;top:40.4667em;"><span class="pdf24_16 pdf24_11 pdf24_19" style="word-spacing:0.0371em;">21% IVA &nbsp;</span></div>
 					<div class="pdf24_01" style="left:40.2875em;top:40.4667em;"><span class="pdf24_16 pdf24_11 pdf24_19">Total &nbsp;</span></div>
-					<div class="pdf24_01" style="left:36.2446em;top:41.4874em;"><span class="pdf24_18 pdf24_11 pdf24_20">i1 &nbsp;</span></div>
-					<div class="pdf24_01" style="left:42.5964em;top:41.4874em;"><span class="pdf24_18 pdf24_11 pdf24_20">t1 &nbsp;</span></div>
+		            <div class="pdf24_01" style="left:34.5em;top:41.4874em;"><span class="pdf24_18 pdf24_11 pdf24_17" style="word-spacing:0.0001em; font-family: Arial, sans-serif;">{{ $json.body.iva_unidad_1 }} € &nbsp;</span></div>
+					<div class="pdf24_01" style="left:40.9em;top:41.4874em;"><span class="pdf24_18 pdf24_11 pdf24_17" style="word-spacing:0.0001em; font-family: Arial, sans-serif;">{{ $json.body.total_linea_con_iva_1 }} € &nbsp;</span></div>
 					<div class="pdf24_01" style="left:4.725em;top:47.68em;"><span class="pdf24_21 pdf24_11 pdf24_22" style="word-spacing:0.0032em;">Adecuación de umbrales e instalación: 120,00 € + 21% IVA 25,20 € = 145,20 € &nbsp;</span></div>
 					<div class="pdf24_01" style="left:20.3119em;top:67.3578em;"><span class="pdf24_23 pdf24_08 pdf24_24" style="word-spacing:0.0022em;">Aquablock Sistemas, S.L. &nbsp;</span></div>
 					<div class="pdf24_01" style="left:6.9167em;top:68.5723em;"><span class="pdf24_25 pdf24_08 pdf24_26" style="word-spacing:0.0036em;">Domicilio social en Ruiz de Padrón, 101, bajos primera, 08026 Barcelona. Oficinas Calle de la Resseguidora, 51, 08302 Mataró (Barcelona) &nbsp;</span></div>
@@ -411,9 +411,9 @@
 					<div class="pdf24_01" style="left:5.7875em;top:21.021em;"><span class="pdf24_28 pdf24_11 pdf24_29">Adecuaciones &nbsp;</span></div>
 					<div class="pdf24_01" style="left:5.7875em;top:22.121em;"><span class="pdf24_28 pdf24_11 pdf24_29">necesarias &nbsp;</span></div>
 					<div class="pdf24_01" style="left:4.725em;top:26.1221em;"><span class="pdf24_14 pdf24_11 pdf24_13">En Mataró a 4 de Diciembre de 2025 &nbsp;</span></div>
-					<div class="pdf24_01" style="left:5.35em;top:29.8164em;"><span class="pdf24_14 pdf24_11 pdf24_13">D. Dª &nbsp;</span></div>
+					<div class="pdf24_01" style="left:5.35em;top:29.8164em;"><span class="pdf24_14 pdf24_11 pdf24_13">D. Dª {{ $('Webhook').item.json.body.nombre }} &nbsp;</span></div>
 					<div class="pdf24_01" style="left:27.051em;top:28.6638em;"><span class="pdf24_33 pdf24_11 pdf24_34" style="word-spacing:0.0001em;">Firma en prueba de aceptación de esta oferta &nbsp;</span></div>
-					<div class="pdf24_01" style="left:5.35em;top:33.3286em;"><span class="pdf24_14 pdf24_11 pdf24_13">Dirección: </span><span class="pdf24_27 pdf24_11 pdf24_13">C/ &nbsp;</span></div>
+					<div class="pdf24_01" style="left:5.35em;top:33.3286em;"><span class="pdf24_14 pdf24_11 pdf24_13">Dirección: {{ $('Webhook').item.json.body.direccion }} </span><span class="pdf24_27 pdf24_11 pdf24_13">C/ &nbsp;</span></div>
 					<div class="pdf24_01" style="left:5.35em;top:35.6909em;"><span class="pdf24_14 pdf24_11 pdf24_13">NIF: &nbsp;</span></div>
 					<div class="pdf24_01" style="left:20.3119em;top:67.3578em;"><span class="pdf24_23 pdf24_08 pdf24_24" style="word-spacing:0.0022em;">Aquablock Sistemas, S.L. &nbsp;</span></div>
 					<div class="pdf24_01" style="left:6.9167em;top:68.5723em;"><span class="pdf24_25 pdf24_08 pdf24_26" style="word-spacing:0.0036em;">Domicilio social en Ruiz de Padrón, 101, bajos primera, 08026 Barcelona. Oficinas Calle de la Resseguidora, 51, 08302 Mataró (Barcelona) &nbsp;</span></div>
@@ -550,10 +550,10 @@
 					<div class="pdf24_01" style="left:4.725em;top:50.0104em;"><span class="pdf24_37 pdf24_11 pdf24_36" style="word-spacing:0.0632em;">y mantenimiento, y que pueden existir situaciones excepcionales en las que el &nbsp;</span></div>
 					<div class="pdf24_01" style="left:26.85em;top:40.6558em;"><span class="pdf24_46 pdf24_47 pdf24_34" style="word-spacing:0.0002em;">Barcelona, </span><span class="pdf24_48 pdf24_11 pdf24_29">[_] &nbsp;</span></div>
 					<div class="pdf24_01" style="left:29.2797em;top:42.9281em;"><span class="pdf24_46 pdf24_47 pdf24_34" style="word-spacing:0.0001em;">Consiento tratamiento de datos personales &nbsp;</span></div>
-					<div class="pdf24_01" style="left:27.475em;top:45.165em;"><span class="pdf24_48 pdf24_11 pdf24_36" style="word-spacing:0.0006em;">D. Dª: &nbsp;</span></div>
+					<div class="pdf24_01" style="left:27.475em;top:45.165em;"><span class="pdf24_48 pdf24_11 pdf24_36" style="word-spacing:0.0006em;">D. Dª: {{ $json.body.nombre }} &nbsp;</span></div>
 					<div class="pdf24_01" style="left:39.8501em;top:45.165em;"><span class="pdf24_48 pdf24_11 pdf24_38" style="word-spacing:0.0002em;">Firma en prueba de &nbsp;</span></div>
 					<div class="pdf24_01" style="left:39.0166em;top:45.9316em;"><span class="pdf24_48 pdf24_11 pdf24_29" style="word-spacing:0.0001em;">aceptación de esta oferta &nbsp;</span></div>
-					<div class="pdf24_01" style="left:27.475em;top:46.7607em;"><span class="pdf24_48 pdf24_11 pdf24_38">Dirección:C/ &nbsp;</span></div>
+					<div class="pdf24_01" style="left:27.475em;top:46.7607em;"><span class="pdf24_48 pdf24_11 pdf24_38">Dirección:C/ {{ $json.body.direccion }} &nbsp;</span></div>
 					<div class="pdf24_01" style="left:27.475em;top:48.3564em;"><span class="pdf24_48 pdf24_11 pdf24_38">NIF: &nbsp;</span></div>
 					<div class="pdf24_01" style="left:4.725em;top:50.6826em;"><span class="pdf24_37 pdf24_11 pdf24_36" style="word-spacing:0.4782em;">Producto podría no evitar la entrada de agua &nbsp;</span></div>
 					<div class="pdf24_01" style="left:4.725em;top:51.3548em;"><span class="pdf24_37 pdf24_11 pdf24_36">personales. &nbsp;</span></div>
